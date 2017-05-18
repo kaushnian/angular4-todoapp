@@ -12,7 +12,7 @@
         "core-js": "2.4.1",
         "classlist.js": "1.1.20150312",
         "systemjs": "0.20.12",
-        "bootstrap": "3.3.7"
+        "bootstrap": "4.0.0-alpha.4"
     },
 
     "devDependencies": {
