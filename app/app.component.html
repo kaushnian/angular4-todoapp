@@ -23,5 +23,5 @@
 
 <div class="m-t-1 m-b-1">
   <input type="text" class="form-control" #todoText>
-  <button class="btn btn-primary m-t-1" (click)="addItem(todoText.value)">Add</button>
+  <button class="btn btn-primary m-t-1" (click)="addItem(todoText.value); todoText.value=''">Add</button>
 </div>

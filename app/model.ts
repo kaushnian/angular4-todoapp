@@ -17,7 +17,7 @@ export class TodoItem {
   action;
   done;
 
-  constructor(action, done) {
+  constructor(action: string, done: boolean) {
     this.action = action;
     this.done = done;
   }
