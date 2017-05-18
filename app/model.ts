@@ -1,13 +1,3 @@
-let model = {
-  user: "Adam",
-  items: [
-    { action: "Buy flowers", done: false },
-    { action: "Get Shoes", done: false },
-    { action: "Collect tickets", done: true },
-    { action: "Call Joe", done: false }
-  ]
-};
-
 export class Model {
   user;
   items;

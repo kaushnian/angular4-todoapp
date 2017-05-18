@@ -22,6 +22,6 @@
 </table>
 
 <div class="m-t-1 m-b-1">
-  <input type="text" class="form-control">
-  <button class="btn btn-primary m-t-1">Add</button>
+  <input type="text" class="form-control" #todoText>
+  <button class="btn btn-primary m-t-1" (click)="addItem(todoText.value)">Add</button>
 </div>
