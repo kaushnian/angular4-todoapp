@@ -6,17 +6,17 @@ import { Model, TodoItem } from './model';
   templateUrl: 'app/app.component.html'
 })
 export class AppComponent {
-  model = new Model();
+  private model = new Model();
 
-  getName() {
+  getName() : string {
     return this.model.user;
   }
 
-  getTodoItems() {
-    return this.model.items.filter(item => !item.done);
+  getTodoItems() : TodoItem[] {
+    return this.model.items.filter(item => !item.isDone);
   }
 
-  addItem(newItem: string) {
+  addItem(newItem: string) : void {
     if (newItem != '') {
       this.model.items.push(new TodoItem(newItem, false));
     }
